@@ -1,0 +1,414 @@
+/*--------------------------------------------------------------
+ *The media queries below were taken from Less Framework (http://lessframework.com/). 
+ *--------------------------------------------------------------
+
+/*		Tablet Layout: 768px.
+ *		Gutters: 24px.
+ *		Outer margins: 28px.
+ *		Inherits styles from: Default Layout.
+ *-----------------------------------------------------------------
+ *cols    1     2      3      4      5      6      7      8
+ *px      68    160    252    344    436    528    620    712
+
+@media only screen and (min-width: 768px) and (max-width: 991px)
+  body, .fullwidth
+    min-width: 100%
+
+/*		Mobile Layout: 320px.
+ *		Gutters: 24px.
+ *		Outer margins: 34px.
+ *		Inherits styles from: Default Layout.
+ *---------------------------------------------
+ *cols    1     2      3
+ *px      68    160    252
+
+@media only screen and (max-width: 767px)
+  body
+    width: 320px
+    min-width: 320px
+    padding: 0
+  .fullwidth
+    width: 320px
+    max-width: 320px
+    min-width: 320px
+  .activity-list .activity-content .activity-header img.avatar
+    display: none
+  body div.item-list-tabs ul li
+    margin: 0 0 -1px 0 !important
+    width: 100%
+    float: left
+    border: none !important
+    &:first-child
+      margin: 0 0 -1px 0 !important
+      width: 100%
+      float: left
+      border: none !important
+  div
+    &.item-list-tabs ul li
+      a, span
+        display: block
+        padding: 2px 8px
+        text-align: center
+    &#item-header #bp-before-member-header #item-header-content
+      margin-left: 0
+  #search-form
+    margin-top: 0
+  #nav
+    margin: 0
+  #item-header
+    #bp-before-member-header img.avatar, #bp-before-group-header img.avatar
+      height: 75px
+      width: 75px
+  div
+    &#item-header div
+      &#item-actions
+        display: none
+      &#item-header-content
+        margin-left: 0
+    &#topic-meta div.admin-links
+      top: 0
+    &#item-header h2 a
+      font-size: .7em
+  #item-header-content #latest-update
+    display: none
+  div#item-header
+    div
+      &#item-meta
+        margin-top: 0
+        #item-buttons div.generic-button a
+          font-size: 13px
+          padding: 3px 7px
+      &.generic-button
+        margin-right: 5px
+    a.button
+      margin-right: 5px
+  #bp-before-member-header div#item-header h2 span.highlight, div#item-header #bp-before-member-header h2 span.highlight
+    display: none
+  #header h1
+    margin-left: 0
+  body.activity-permalink
+    .activity-list li
+      .activity-avatar img.avatar
+        height: 60px !important
+        width: 60px !important
+      .activity-content
+        margin-left: 90px
+    div.activity-comments
+      margin-left: 90px
+    .activity-list li .activity-header > p
+      background: none
+  #footer-widget-area, #feature-widget-area
+    widget-area > ul
+      margin-right: 0
+      width: 100%
+      > li
+        padding: 10px
+  body
+    &.page div#container, &.blog div#container, &.single div#container, &.archive div#container
+      width: 100%
+    &.page div#content .padder, &.blog div#content .padder, &.single div#content .padder, &.archive div#content .padder
+      margin-right: 0
+  div#sidebar
+    clear: both
+    margin-left: 0
+    width: 100%
+  div.dir-search
+    display: none
+  .dir-form h3
+    font-size: 2em
+  a.button, button
+    padding: 3px 4px
+  input
+    &[type="submit"], &[type="reset"], &[type="button"]
+      padding: 3px 4px
+  div.generic-button a
+    padding: 3px 4px
+  #th-postcount, .td-postcount, th#th-postcount
+    display: none
+  #sidebar-squeeze
+    width: 100%
+    margin-left: 0
+    margin-right: 0
+    #main-column, div#sidebar
+      width: 100%
+      margin-left: 0
+      margin-right: 0
+  #header
+    float: left
+    #navigation
+      float: left
+    #search-bar
+      float: left
+      .padder
+        float: left
+        height: auto
+        width: 100%
+        padding: 1em 0
+    h1
+      margin: 0 0 10px
+      width: 100%
+      text-align: center
+  #search-form
+    margin-bottom: 1em
+    text-align: center
+  #header #search-bar input[type="text"]
+    width: 80px
+  #nav
+    width: 100%
+    li
+      width: 50%
+      a
+        background: none
+        filter: none
+        border: none
+        color: #666
+        margin: 0
+        padding: 7px 0
+        text-align: center
+        width: 100%
+        float: left
+        white-space: normal
+        &:hover
+          box-shadow: none
+          border: none
+          padding-left: 0
+      &.sfhover a
+        box-shadow: none
+        border: none
+        padding-left: 0
+    > li
+      &.current-menu-item a, &.current_page_item a
+        background: #D7D7D7
+        box-shadow: none
+  nav li.selected a
+    background: #D7D7D7
+    box-shadow: none
+  #nav li
+    .children, .sub-menu
+      display: none !important
+    &:first-child a
+      border-left: none
+  form#whats-new-form
+    #whats-new-avatar
+      display: none
+      display: none
+    #whats-new-content, h5
+      margin-left: 0
+      padding-left: 0
+  #bp-before-activity-post-form
+    overflow: visible
+  .dir-form
+    h3
+      margin-bottom: 3em !important
+      clear: both
+      text-align: center !important
+      float: left
+      width: 80%
+      margin: 0 10% !important
+      a
+        clear: both
+        text-align: center !important
+        float: left
+        width: 80%
+        margin: 0 10% !important
+    #sidebar h3
+      width: auto
+      margin: 25px -19px 10px -18px !important
+      float: none
+      a
+        width: auto
+        margin: 25px -19px 10px -18px !important
+        float: none
+
+/*		Wide Mobile Layout: 480px.
+ *		Gutters: 24px.
+ *		Outer margins: 22px.
+ *		Inherits styles from: Default Layout, Mobile Layout.
+ *------------------------------------------------------------
+ *cols    1     2      3      4      5
+ *px      68    160    252    344    436
+
+@media only screen and (min-width: 480px) and (max-width: 767px)
+  body
+    width: 480px
+    min-width: 480
+    padding: 0
+  .fullwidth
+    width: 480px
+    max-width: 480px
+    min-width: 480px
+  .activity-list .activity-content .activity-header img.avatar
+    display: none
+  body div.item-list-tabs ul li
+    margin: 0 0 -1px 0 !important
+    width: 100%
+    float: left
+    border: none !important
+    &:first-child
+      margin: 0 0 -1px 0 !important
+      width: 100%
+      float: left
+      border: none !important
+  div
+    &.item-list-tabs ul li
+      a, span
+        display: block
+        padding: 2px 8px
+        text-align: center
+      a span
+        margin: -3px 0 0 3px
+        padding: 2px 8px
+    &#item-header #bp-before-member-header #item-header-content
+      margin-left: 0
+  #item-header #bp-before-member-header img.avatar
+    height: 75px
+    width: 75px
+  div#item-header h2 a
+    font-size: 1em
+  #item-header-content #latest-update
+    display: none
+  div#item-header
+    div
+      &#item-meta
+        margin-top: 0
+        #item-buttons div.generic-button a
+          font-size: 13px
+          padding: 3px 7px
+      &.generic-button
+        margin-right: 5px
+    a.button
+      margin-right: 5px
+    #bp-before-member-header h2 span.highlight
+      display: none
+  #search-form
+    margin-top: 8px
+  #header h1
+    margin-left: 0
+  body.activity-permalink
+    .activity-list li
+      .activity-avatar img.avatar
+        height: 60px !important
+        width: 60px !important
+      .activity-content
+        margin-left: 110px
+    div.activity-comments
+      margin-left: 110px
+  #footer-widget-area, #feature-widget-area
+    .widget-area > ul
+      margin-right: 0
+      width: 50%
+      > li
+        padding: 10px
+  #third.widget-area
+    clear: left
+  body
+    &.page div#container, &.blog div#container, &.single div#container, &.archive div#container
+      width: 100%
+    &.page div#content .padder, &.blog div#content .padder, &.single div#content .padder, &.archive div#content .padder
+      margin-right: 0
+  div#sidebar
+    clear: both
+    margin-left: 0
+    width: 100%
+  div.dir-search
+    display: none
+  .dir-form h3
+    font-size: 2.3em
+  a.button, button
+    padding: 4px 8px
+  input
+    &[type="submit"], &[type="reset"], &[type="button"]
+      padding: 4px 8px
+  div.generic-button a
+    padding: 4px 8px
+  #th-postcount, .td-postcount
+    display: none
+  #sidebar-squeeze
+    width: 100%
+    margin-left: 0
+    margin-right: 0
+    #main-column, div#sidebar
+      width: 100%
+      margin-left: 0
+      margin-right: 0
+  #header
+    float: left
+    #navigation
+      float: left
+    #search-bar
+      float: left
+      .padder
+        float: left
+        height: auto
+        width: 100%
+        padding: 1em 0
+    h1
+      margin: 0 0 10px
+      width: 100%
+      text-align: center
+  #search-form
+    margin-bottom: 1em
+    text-align: center
+  #nav
+    width: 100%
+    margin: 0
+    li
+      width: 50%
+      a
+        background: none
+        filter: none
+        border: none
+        color: #666
+        margin: 0
+        padding: 7px 0
+        text-align: center
+        width: 100%
+        float: left
+        &:hover
+          box-shadow: none
+          border: none
+          padding-left: 0
+      &.sfhover a
+        box-shadow: none
+        border: none
+        padding-left: 0
+    > li
+      &.current-menu-item a, &.current_page_item a
+        background: #D7D7D7
+        box-shadow: none
+  nav li.selected a
+    background: #D7D7D7
+    box-shadow: none
+  #nav li
+    .children, .sub-menu
+      display: none !important
+    &:first-child a
+      border-left: none
+  form#whats-new-form
+    #whats-new-avatar
+      display: none
+    #whats-new-content, h5
+      margin-left: 0
+      padding-left: 0
+  .dir-form
+    h3
+      margin-bottom: 1em !important
+      clear: both
+      text-align: center !important
+      float: left
+      width: 80%
+      margin: 0 10% !important
+      a
+        clear: both
+        text-align: center !important
+        float: left
+        width: 80%
+        margin: 0 10% !important
+    #sidebar h3
+      width: auto
+      margin: 25px -19px 10px -18px !important
+      float: none
+      a
+        width: auto
+        margin: 25px -19px 10px -18px !important
+        float: none

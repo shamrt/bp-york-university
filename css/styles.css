@@ -1,0 +1,424 @@
+html {
+	height: 100%;
+	min-height: 100%;
+}
+body {
+	border: 0;
+	margin: 0;
+	padding: 0;
+	background-image:url("http://www.yorku.ca/yorkweb/images/background.png");
+	background-color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+}
+#page {
+	padding:0 25px;
+}
+/* Global Navigation (York Header) */
+.yib11skipnav a, .yib11skipnav a:hover, .yib11skipnav a:visited {
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+.yib11skipnav a:focus, .yib11skipnav a:active {
+    height: auto;
+    position: static;
+    width: auto;
+}
+#yib11banner {
+    background: none repeat scroll 0 0 #FFFFFF;
+    float: left;
+    font-family: Arial,Helvetica,sans-serif;
+    padding-left: 24px;
+    padding-right: 25px;
+    padding-top: 19px;
+    width: 910px;
+}
+#yib11yorklogo {
+    float: left;
+    height: 75px;
+    width: 115px;
+}
+#yib11globalnava {
+    display: block;
+    float: right;
+    font-size: 11px;
+    letter-spacing: 0;
+    padding-bottom: 10px;
+    padding-top: 1px;
+    text-align: right;
+    width: 795px;
+}
+#yib11globalnava a {
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-color: -moz-use-text-color #333333 -moz-use-text-color -moz-use-text-color;
+    border-style: none solid none none;
+    border-width: 0 1px 0 0;
+    color: #333333;
+    line-height: 13px;
+    margin: 0;
+    padding: 0 6px 0 3px;
+    text-decoration: none;
+}
+#yib11globalnava a:hover {
+    color: #CC0000;
+    text-decoration: underline;
+}
+#yib11globalnava .yib11globalnavalast a {
+    border-right: 0 none;
+    padding-right: 3px;
+}
+#yib11globalnava .yib11accessibility a {
+    background: none repeat scroll 0 0 #000000;
+    border-right: 0 none;
+    color: #FFFFFF;
+    padding-bottom: 1px;
+    padding-right: 3px;
+    padding-top: 0;
+    text-transform: uppercase;
+}
+#yib11globalnavb {
+    display: block;
+    float: right;
+    font-size: 10px;
+    letter-spacing: 0;
+    line-height: 12px;
+    padding-bottom: 4px;
+    padding-top: 7px;
+    text-align: right;
+    width: 795px;
+}
+#yib11globalnavb a {
+    background: url("http://www.yorku.ca/yorkweb/images/yib11globalnavbbuttonbg.gif") repeat-x scroll left top #CC0000;
+    border: 0 none;
+    color: #FFFFFF;
+    line-height: 200%;
+    margin: 0 3px 0 0;
+    padding: 3px 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+#yib11globalnavb a:hover {
+    text-decoration: underline;
+}
+#yib11globalnavb form {
+    display: inline;
+}
+#yib11globalnavb #yib11searchfield {
+    margin-right: 4px;
+    vertical-align: middle;
+}
+#yib11globalnavb #yib11searchbutton {
+    vertical-align: middle;
+}
+#yib11internalnav {
+    border-top: 2px solid #CCCCCC;
+    clear: both;
+    display: block;
+    font-size: 11px;
+    letter-spacing: 0;
+    line-height: 13px;
+    padding-bottom: 4px;
+    padding-top: 3px;
+    text-align: center;
+    width: 910px;
+}
+#yib11internalnav a {
+    border: 0 none;
+    color: #333333;
+    line-height: 13px;
+    margin: 0 80px 0 0;
+    padding: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+#yib11internalnav .yib11internalnavlast {
+    margin-right: 0;
+}
+#yib11internalnav a:hover {
+    color: #CC0000;
+    text-decoration: underline;
+}
+/* end of Global Navigation (York Header) */
+
+#graphical-banner {
+	float:left;
+	padding:0;
+	width:910px;
+	clear:both;
+}
+#unit-banner {
+	float:left;
+	padding:10px 0 0 0;
+	width:910px;
+}
+#nav_area {
+	float: left;
+	width: 200px;
+	margin: 0px;
+	padding: 0px;
+	margin-bottom: 0px;
+}
+#home {
+	text-transform:uppercase;
+	font-size:14px;
+}
+#left-nav {
+	margin: 0;
+	border: 0;
+	padding: 25px 0 80px;
+	width: 170px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #252525;
+}
+#left-nav ul {
+	margin: 0;
+	border: 0;
+	padding:2px 0;
+	list-style-type: none;
+}
+#left-nav li {
+	margin: 0;
+	border: 0;
+	padding: 5px 0;
+}
+#left-nav a:hover {
+	color: #CC0000;
+	text-decoration:underline;
+}
+#left-nav li ul {
+	margin: 0;
+	border: 0;
+	padding: 0;
+	list-style-type: none;
+}
+#left-nav li ul li {
+	border: 0;
+	padding: 5px 0 0 15px;
+	font-size: 12px;
+}
+#left-nav li a {
+	display: block;
+	width: 100%;
+	padding: 0;
+	line-height: 18px;
+	text-decoration: none;
+	color:#252525;
+}
+
+
+
+html>body #left-nav li a {
+	width: auto;
+}
+#main_content {
+	float: left;
+	margin: 0;
+	border: 0;
+	width: 910px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	background-image:url("http://www.yorku.ca/yorkweb/images/crest.png");
+	background-position:left bottom;
+	background-repeat:no-repeat;
+	clear:both;
+	min-height: 300px;
+}
+#group {
+	float: left;
+	width: 710px;
+	margin-left: 170px;
+	margin-bottom: 8px;
+	margin-top: 8px;
+	margin: 0px;
+	border: 0px;
+	font-size:12px;
+	line-height:21px;
+	color:#252525;
+	padding-top:20px;
+}
+
+	
+#group-no-sidebar {width:674px;}
+	
+#group .smallbodytext {
+	font-size: 11px;
+	line-height:18px;
+}
+/* link tags */
+#group a, #group a:link, #group a:active, #group a:visited, #group a:hover {
+	color: #CC0000;
+}
+/* heading tags */
+#group h1 {
+	text-transform:uppercase;
+	color:#333366;
+	font-size: 16px;
+}
+#group h2 {
+	font-size: 15px;
+	font-weight: bold;
+	padding-top:10px;
+}
+#group h3 {
+	font-size: 14px;
+	font-weight: bold;
+}
+#group h4 {
+	font-size: 11px;
+	font-weight: bold;
+}
+#group img {
+	padding-top:10px;
+}
+#centre-col {
+	float: left;
+	padding: 0 19px 0 0;
+	width: 455px;
+	border-right:1px solid #DEDEDE;
+	margin-top: 0px !important;
+}
+#centre-col img {
+	padding:5px;
+}
+#right-col {
+	float: left;
+	margin-top: 5px;
+	padding:0 0 20px 25px;
+	width: 210px;
+}
+#right-col a, #right-col a:link, #right-col a:active, #right-col a:visited {
+	color:#cc0000;
+	text-decoration:none;
+}
+#right-col a:hover {
+	color: #CC0000;
+	text-decoration:underline;
+}
+#right-col h2 {
+	text-transform:uppercase;
+	font-size: 12px;
+	font-weight: bold;
+	line-height: 18px;
+}
+#social-media-icons {
+	padding:10px 0;
+}
+#social-media-icons img {
+	padding-right:8px;
+	border:0;
+}
+#parent-org a, #parent-org a:link, #parent-org a:active, #parent-org a:visited {
+	text-transform:uppercase;
+	color:#cc0000;
+	text-decoration:none;
+}
+
+#right-col-list p {
+	line-height:14px;
+}
+
+#right-col-list ul {
+	list-style-type: none;
+	text-indent: -40px;
+	padding-bottom: 10px;
+}
+
+#right-col-list .ToC {
+	list-style-type: none;
+	text-indent: -15px;
+}
+
+#right-col-button {
+	padding-top: 15px;
+}
+#right-col-highlight {
+	padding-top: 15px;
+}
+/* Bottom Link Menu code begins */
+#bottom-link-menu {
+	border-top:2px solid #CCCCCC;
+	border-bottom:2px solid #CCCCCC;
+	float:left;
+	margin:30px 0 0 0;
+	padding:5px 10px 10px;
+	width:890px;
+	clear:both;
+}
+#bottom-link-menu a:link, #bottom-link-menu a:visited {
+	text-decoration:none;
+	color:#000
+}
+#bottom-link-menu a:hover {
+	text-decoration: underline;
+	color:#C00;
+}
+#bottom-link-menu ul {
+	list-style-type:none;
+	margin:10px 0 0 0;
+	padding:0px;
+	border:0;
+}
+#bottom-link-menu li {
+	margin:8px 0 0 0;
+	padding:0;
+	border:0;
+}
+
+.blm-col {
+	float:left;
+	width:170px;
+	font-size:12px;
+	padding:0 8px 0 0;
+	display:inline;
+	margin:0;
+	border:0;
+}
+
+.blm-col h2 {
+	line-height:14px;
+	margin-top:8px;
+	text-transform:uppercase;
+	font-size:13px;
+	font-weight:bold;
+}
+/*Bottom Link Menu code ends */
+
+#footer {
+	clear: both;
+	float: left;
+	width: 960px;
+	border: 0px;
+	padding: 10px 0 10px;
+}
+#footer a {
+	color: #252525;
+	font-size: 11px;
+	text-decoration:none;
+}
+#footer a:hover {
+	color: #CC0000;
+	text-decoration: underline;
+}
+.hide {
+	display: none;
+}
+/* RSS Feed */
+
+ul.rss-items {
+	list-style-type:none;
+	padding:0;
+	margin:0;
+}
+li.rss-item {
+	padding-bottom: 8px;
+}

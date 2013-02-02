@@ -1,0 +1,172 @@
+=button_colors_style($base, $grad_top, $border, $shadow: $border, $text: white, $active_base: $base - #222, $active_grad: $grad_top - #222)
+  $button_bg: $base url(http://www.yorku.ca/yorkweb/images/yib11globalnavbbuttonbg.gif) top left repeat-x
+  
+  background: $button_bg
+  // background-color: $base
+  // +background-image(linear-gradient(top, $grad_top, $base))
+  // filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$grad_top, endColorstr=$base)
+  border-color: $border
+  color: $text !important
+  &:hover
+    text-decoration: underline !important
+    background-color: $button_bg !important
+    //   +background-image(linear-gradient(top, $base, $base))
+    //   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$base, endColorstr=$base)
+    //   // border-color: $border
+    //   color: $text !important
+  // &:active
+  //     background-color: $active_base
+  //     +background-image(linear-gradient(top, $active_grad, $active_base))
+  //     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$active_grad, endColorstr=$active_base)
+  //     // border-color: $border
+  //     color: $text !important
+    
+
+/* --- input & buttons ---------------------------------------------------------
+
+input
+  &[type="submit"], 
+  &[type="reset"], 
+  &[type="button"]
+    font-family: $font_family
+
+div.generic-button a, 
+span.user-nicename, 
+#item-header-content span.highlight, 
+body .navigation a
+  font-family: $font_family
+
+a.button,
+button.button,
+input.button,
+#respond input#submit, 
+#content .button,
+div.generic-button a
+  $button_bg: #b22222 url(images/yib11globalnavbbuttonbg.gif) top left repeat-x
+
+  background: $button_bg
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
+  
+  +border-radius(0)
+  border: none
+  color: #fff !important
+  cursor: pointer
+  display: inline-block
+  font:
+    family: $font_family
+    size: 10px
+    weight: normal
+  line-height: 1
+  padding: 4px
+  text-decoration: none !important
+  text-transform: uppercase
+  vertical-align: middle
+  &:hover
+    text-decoration: underline !important
+    background: $button_bg
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled=false)
+    border: none !important
+    
+#left-col a.button,
+#right-col a.button,
+#contre-col a.button
+  @extend a.button
+    
+ul.button-nav
+  +clearfix
+  +drop
+  
+  li.current a
+    @extend button.button:hover
+
+body
+  .navigation a, 
+  &.single a.comment-reply-link, 
+  &.page a.comment-reply-link
+    @extend button.button
+    
+.button.submit,
+.button.logout,
+.pushbutton-wide
+  padding:
+    left: 1em !important
+    right: 1em !important
+
+.button.full-width, 
+button.full-width
+  padding-left: 0 !important
+  padding-right: 0 !important
+  text-align: center
+  width: 100%
+
+input.full-width
+  &[type="submit"], &[type="reset"], &[type="button"]
+    padding-left: 0 !important
+    padding-right: 0 !important
+    text-align: center
+    width: 100%
+    
+    
+/* =Buttons (Call to Action)
+ *--------------------------------------------------------------
+
+.call-to-action
+  text-align: center
+  a.button
+    font-size: 24px
+    padding: 15px 35px
+    &:hover
+      text-decoration: none
+
+.ie7 .call-to-action a.button
+  padding: 15px 35px 18px 35px
+
+/* =Buttons (Sizes)
+ *--------------------------------------------------------------
+
+.small a.button
+  font-size: 10px
+  padding: 3px 6px
+
+.medium a.button
+  font-size: 16px
+  padding: 8px 16px
+
+.large a.button
+  font-size: 18px
+  padding: 10px 35px
+
+.xlarge a.button
+  font-size: 24px
+  padding: 12px 55px
+
+// /* =Buttons (Colors)
+//  *--------------------------------------------------------------
+// 
+// a
+//   &.default
+//     +button_colors_style(#cdcdcd, #fbfbfb, #ccc #aaa #aaa #ccc, #f7f7f7, #444)
+//   &.blue
+//     +button_colors_style(#4682b4, #5fb0f4, #386890)
+//   &.red
+//     +button_colors_style(#b22222, #ed2e2e, #8e1b1b)
+//   &.orange
+//     +button_colors_style(#ff8C00, #fdc37d, #cc7000)
+//   &.green
+//     +button_colors_style(#2e8b57, #46d686, #256f46)
+//   &.purple
+//     +button_colors_style(#9932cc, #d481fd, #7a28a3)
+//   &.pink
+//     +button_colors_style(#ff69b4, #fcb8da, #cc5490)
+//   &.brick
+//     +button_colors_style(#ff6347, #fcad9f, #cc4f39)
+//   &.gold
+//     +button_colors_style(#daa520, #fbd577, #ae841a)
+//   &.brown
+//     +button_colors_style(#8b4513, #d3691d, #6f370f)
+//   &.silver
+//     +button_colors_style(#c0c0c0, #fbf8f8, #9a9a9a, #fff)
+//   &.gray
+//     +button_colors_style(#696969, #c0bfbf, #545454, #111)
+//   &.black
+//     +button_colors_style(#000, #515151, #000)

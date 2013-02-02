@@ -1,0 +1,1656 @@
+@import "http://www.yorku.ca/yorkweb/css/styles.css";
+/*
+ * Theme Name: York University Social
+ * Description: York University Social is a customized theme that was built specifically for the new York University Specialized Honours Program website.
+ * Version: 0.9.7
+ * Date: 2012-09-06
+ * Author: Shane Martin
+ * Author URI: http://sha.nemart.in
+ * License: GNU General Public License v2.0
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Template: bp-default
+ * Tags: buddypress, York University */
+/*----------------------------------------------------------------------------
+ * York University Social Styles - Overriding bp-default css.
+ *---------------------------------------------------------------------------- */
+/* Mixins
+ * ----------------------------------------------------------------------------- */
+/* line 4, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+hr {
+  background: #dddddd;
+  border: none;
+  clear: both;
+  color: #dddddd;
+  float: none;
+  height: 0.1em;
+  margin: 0 0 1.45em;
+  width: 100%;
+}
+/* line 13, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+hr.space {
+  background: white;
+  color: white;
+}
+
+/* line 21, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+html {
+  height: 100%;
+}
+
+/* line 24, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+body {
+  color: #333333;
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: none;
+  width: auto;
+}
+
+/* line 31, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+body#bp-default #wp-admin-bar .padder {
+  width: 100% !important;
+  max-width: 10000px !important;
+  min-width: 960px;
+  clear: both;
+}
+
+/* line 37, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+.padder {
+  padding: 0;
+}
+
+/* line 40, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+div.page {
+  overflow: visible;
+}
+
+/* line 43, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+body, h1, h2, h3, #footer-widget-area h3.widgettitle, h4, h5, h6, div.author-box {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 46, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+a {
+  color: #cc0000;
+}
+/* line 48, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+a:hover {
+  color: #cc0000;
+}
+/* line 50, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+a:focus {
+  outline: none;
+}
+
+/* line 53, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+p {
+  margin-bottom: 18px;
+}
+/* line 56, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+p.postmetadata, p.date {
+  font-family: inherit;
+}
+/* line 60, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+p.postmetadata span:first-child, p.date span:first-child {
+  font-family: inherit;
+}
+/* line 63, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+p.postmetadata {
+  clear: both;
+}
+
+/* line 70, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+h1, h2, h3, #footer-widget-area h3.widgettitle, h4, h5, h6 {
+  font-weight: bold;
+  line-height: 1em;
+  margin: 0 0 18px;
+  text-transform: uppercase;
+}
+
+/* line 76, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+h1#site-title {
+  font-size: 18pt;
+  font-weight: normal;
+  text-transform: none;
+}
+
+/* line 86, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+#page textarea,
+#page input[type="text"],
+#page select,
+#page input[type="password"] {
+  background: white;
+  border: 1px solid #999999;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+  -moz-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.075) inset;
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.075) inset;
+  -o-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.075) inset;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.075) inset;
+  color: #333333;
+  font-family: "Lucida Grande", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  line-height: 11px;
+  margin-bottom: 3px;
+  margin-left: 0;
+  padding: 3px 1px;
+  max-width: 48em;
+}
+
+/* line 98, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+.standard-form p, .bbp-form p, #theme-my-login p {
+  margin-bottom: 9px;
+}
+/* line 101, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+.standard-form label, .bbp-form label, #theme-my-login label,
+.standard-form span.label,
+.bbp-form span.label,
+#theme-my-login span.label {
+  display: block;
+  font-weight: bold;
+  margin: 0;
+}
+/* line 116, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+.standard-form textarea, .bbp-form textarea, #theme-my-login textarea,
+.standard-form input[type="text"],
+.bbp-form input[type="text"],
+#theme-my-login input[type="text"],
+.standard-form input[type="password"],
+.bbp-form input[type="password"],
+#theme-my-login input[type="password"] {
+  min-width: 75%;
+}
+/* line 121, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+.standard-form div.checkbox, .bbp-form div.checkbox, #theme-my-login div.checkbox,
+.standard-form div.radio,
+.bbp-form div.radio,
+#theme-my-login div.radio {
+  margin-bottom: 18px;
+}
+/* line 125, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+.standard-form div.checkbox ul, .bbp-form div.checkbox ul, #theme-my-login div.checkbox ul,
+.standard-form div.radio ul,
+.bbp-form div.radio ul,
+#theme-my-login div.radio ul {
+  margin-top: 0.5em;
+}
+/* line 128, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_base.sass */
+.standard-form div.checkbox label, .bbp-form div.checkbox label, #theme-my-login div.checkbox label,
+.standard-form div.radio label,
+.bbp-form div.radio label,
+#theme-my-login div.radio label {
+  color: inherit;
+  font-size: inherit;
+}
+
+/* --- input & buttons --------------------------------------------------------- */
+/* line 28, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buttons.sass */
+input[type="submit"], input[type="reset"], input[type="button"] {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 33, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buttons.sass */
+div.generic-button a,
+span.user-nicename,
+#item-header-content span.highlight,
+body .navigation a {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 39, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buttons.sass */
+a.button, #left-col a.button,
+#right-col a.button,
+#contre-col a.button,
+button.button,
+.form-submit #submit,
+#wp-submit,
+.standard-form input[type="submit"],
+.bbp-form input[type="submit"],
+#theme-my-login input[type="submit"],
+.standard-form input[type="reset"],
+.bbp-form input[type="reset"],
+#theme-my-login input[type="reset"],
+.standard-form input[type="button"],
+.bbp-form input[type="button"],
+#theme-my-login input[type="button"],
+body .navigation a,
+body.single a.comment-reply-link,
+body.page a.comment-reply-link,
+ul.button-nav li a,
+ul.button-nav li.current a,
+#search-submit,
+.incsub_wiki input[type="submit"],
+form.em-events-search-form input[type="submit"],
+.contact-submit input[type="submit"],
+ul.tml-action-links li a,
+input.button,
+#respond input#submit,
+#content .button,
+div.generic-button a {
+  background: #b22222 url(images/yib11globalnavbbuttonbg.gif) top left repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  color: white !important;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10px;
+  font-weight: normal;
+  line-height: 1;
+  padding: 4px;
+  text-decoration: none !important;
+  text-transform: uppercase;
+  vertical-align: middle;
+}
+/* line 64, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buttons.sass */
+a.button:hover, #left-col a.button:hover,
+#right-col a.button:hover,
+#contre-col a.button:hover,
+button.button:hover,
+.form-submit #submit:hover,
+#wp-submit:hover,
+.standard-form input[type="submit"]:hover,
+.bbp-form input[type="submit"]:hover,
+#theme-my-login input[type="submit"]:hover,
+.standard-form input[type="reset"]:hover,
+.bbp-form input[type="reset"]:hover,
+#theme-my-login input[type="reset"]:hover,
+.standard-form input[type="button"]:hover,
+.bbp-form input[type="button"]:hover,
+#theme-my-login input[type="button"]:hover,
+ul.button-nav li.current a,
+body .navigation a:hover,
+body.single a.comment-reply-link:hover,
+body.page a.comment-reply-link:hover,
+ul.button-nav li a:hover,
+ul.button-nav li.current a:hover,
+#search-submit:hover,
+.incsub_wiki input[type="submit"]:hover,
+form.em-events-search-form input[type="submit"]:hover,
+.contact-submit input[type="submit"]:hover,
+ul.tml-action-links li a:hover,
+input.button:hover,
+#respond input#submit:hover,
+#content .button:hover,
+div.generic-button a:hover {
+  text-decoration: underline !important;
+  background: #b22222 url(images/yib11globalnavbbuttonbg.gif) top left repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  border: none !important;
+}
+
+/* line 75, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buttons.sass */
+ul.button-nav {
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 18px;
+}
+
+/* line 88, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buttons.sass */
+.button.submit, .standard-form input[type="submit"], .bbp-form input[type="submit"], #theme-my-login input[type="submit"],
+.button.logout,
+.pushbutton-wide {
+  padding-left: 1em !important;
+  padding-right: 1em !important;
+}
+
+/* line 95, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buttons.sass */
+.button.full-width,
+button.full-width {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center;
+  width: 100%;
+}
+
+/* line 103, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buttons.sass */
+input.full-width[type="submit"], input.full-width[type="reset"], input.full-width[type="button"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  text-align: center;
+  width: 100%;
+}
+
+/* =Buttons (Call to Action)
+ *-------------------------------------------------------------- */
+/* line 113, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buttons.sass */
+.call-to-action {
+  text-align: center;
+}
+/* line 115, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buttons.sass */
+.call-to-action a.button, .call-to-action #left-col a.button, #left-col .call-to-action a.button,
+.call-to-action #right-col a.button,
+#right-col .call-to-action a.button,
+.call-to-action #contre-col a.button,
+#contre-col .call-to-action a.button {
+  font-size: 24px;
+  padding: 15px 35px;
+}
+/* line 118, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buttons.sass */
+.call-to-action a.button:hover, .call-to-action #left-col a.button:hover, #left-col .call-to-action a.button:hover,
+.call-to-action #right-col a.button:hover,
+#right-col .call-to-action a.button:hover,
+.call-to-action #contre-col a.button:hover,
+#contre-col .call-to-action a.button:hover {
+  text-decoration: none;
+}
+
+/* line 121, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buttons.sass */
+.ie7 .call-to-action a.button, .ie7 .call-to-action #left-col a.button, #left-col .ie7 .call-to-action a.button,
+.ie7 .call-to-action #right-col a.button,
+#right-col .ie7 .call-to-action a.button,
+.ie7 .call-to-action #contre-col a.button,
+#contre-col .ie7 .call-to-action a.button {
+  padding: 15px 35px 18px 35px;
+}
+
+/* =Buttons (Sizes)
+ *-------------------------------------------------------------- */
+/* line 127, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buttons.sass */
+.small a.button, .small #left-col a.button, #left-col .small a.button,
+.small #right-col a.button,
+#right-col .small a.button,
+.small #contre-col a.button,
+#contre-col .small a.button {
+  font-size: 10px;
+  padding: 3px 6px;
+}
+
+/* line 131, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buttons.sass */
+.medium a.button, .medium #left-col a.button, #left-col .medium a.button,
+.medium #right-col a.button,
+#right-col .medium a.button,
+.medium #contre-col a.button,
+#contre-col .medium a.button {
+  font-size: 16px;
+  padding: 8px 16px;
+}
+
+/* line 135, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buttons.sass */
+.large a.button, .large #left-col a.button, #left-col .large a.button,
+.large #right-col a.button,
+#right-col .large a.button,
+.large #contre-col a.button,
+#contre-col .large a.button {
+  font-size: 18px;
+  padding: 10px 35px;
+}
+
+/* line 139, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buttons.sass */
+.xlarge a.button, .xlarge #left-col a.button, #left-col .xlarge a.button,
+.xlarge #right-col a.button,
+#right-col .xlarge a.button,
+.xlarge #contre-col a.button,
+#contre-col .xlarge a.button {
+  font-size: 24px;
+  padding: 12px 55px;
+}
+
+/* line 37, sass/style.sass */
+body.forums #centre-col, body.directory #centre-col, body.group-forum #centre-col, body.bp-user #centre-col, body.my-account #centre-col, body.wiki #centre-col, body.bbPress #centre-col {
+  width: 710px;
+  padding-right: 0;
+  border-right: none;
+}
+
+/* line 48, sass/style.sass */
+body.directory.groups #content .padder, body.directory.members #content .padder, body.directory.blogs #content .padder, body.directory.forums #content .padder, body.directory.activity #content .padder {
+  background: url("images/bg-content-padder.png") repeat-x scroll left top transparent;
+}
+
+/* line 51, sass/style.sass */
+div#container,
+div#content .padder,
+div#sidebar {
+  border: none;
+}
+
+/* line 56, sass/style.sass */
+div#container {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+  overflow: visible;
+}
+
+/* line 60, sass/style.sass */
+div#header,
+div#sidebar {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+}
+
+/* line 63, sass/style.sass */
+div#content {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+}
+/* line 65, sass/style.sass */
+div#content .padder {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+  margin: 0;
+}
+
+/* line 70, sass/style.sass */
+.page-template-onecolumn-page-php #centre-col {
+  width: 710px;
+}
+/* line 72, sass/style.sass */
+.page-template-onecolumn-page-php #centre-col .one-column .page {
+  width: auto;
+}
+/* line 74, sass/style.sass */
+.page-template-onecolumn-page-php #right-col {
+  display: none;
+}
+
+/* line 79, sass/style.sass */
+#group-widget-area .widget,
+#content-widget-area .widget {
+  margin-bottom: 18px;
+}
+/* line 82, sass/style.sass */
+#group-widget-area h3.widgettitle, #group-widget-area #footer-widget-area h3.widgettitle, #footer-widget-area #group-widget-area h3.widgettitle,
+#content-widget-area h3.widgettitle,
+#content-widget-area #footer-widget-area h3.widgettitle,
+#footer-widget-area #content-widget-area h3.widgettitle {
+  margin: 0 0 10px 0;
+}
+/* line 85, sass/style.sass */
+#group-widget-area div.item-options,
+#content-widget-area div.item-options {
+  margin-left: 0;
+  margin-right: 0;
+}
+/* line 89, sass/style.sass */
+#group-widget-area ul.item-list li img.avatar,
+#content-widget-area ul.item-list li img.avatar {
+  margin-left: 15px;
+}
+
+/* line 96, sass/style.sass */
+div#header {
+  overflow: hidden;
+  *zoom: 1;
+  background: transparent;
+  color: inherit;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* line 109, sass/style.sass */
+div.sidebar .widget {
+  margin-bottom: 18px;
+}
+/* line 112, sass/style.sass */
+div.sidebar h3.widgettitle, div.sidebar #footer-widget-area h3.widgettitle, #footer-widget-area div.sidebar h3.widgettitle, div.sidebar h3.loginheader, div.sidebar #footer-widget-area h3.loginheader.widgettitle, #footer-widget-area div.sidebar h3.loginheader.widgettitle {
+  margin-bottom: 0 !important;
+}
+
+/* line 129, sass/style.sass */
+#footer-area {
+  width: 910px;
+  font-size: 10px;
+}
+/* line 133, sass/style.sass */
+#footer-area span.activity {
+  background: #222222;
+}
+
+/* line 136, sass/style.sass */
+#site-generator {
+  color: #a7a7a7;
+  float: right;
+  line-height: 1;
+  margin: 0;
+  padding-top: 10px;
+  text-align: left;
+  text-shadow: none;
+  width: 210px;
+}
+
+/* line 150, sass/style.sass */
+.widget-area {
+  border: none;
+  background: transparent;
+  padding: 0;
+}
+/* line 155, sass/style.sass */
+.widget-area ul li {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 163, sass/style.sass */
+#footer-widget-area div.item-options,
+.sidebar div.item-options {
+  background: transparent;
+}
+/* line 166, sass/style.sass */
+#footer-widget-area .widget,
+.sidebar .widget {
+  margin-bottom: 18px;
+  clear: both;
+}
+
+/* line 170, sass/style.sass */
+#footer-widgets {
+  background-color: transparent;
+  border: none;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+/* line 177, sass/style.sass */
+#footer-widget-area {
+  font-size: 12px;
+  clear: both;
+}
+/* line 181, sass/style.sass */
+#footer-widget-area div.item-options {
+  border-bottom: 1px solid black;
+}
+/* line 184, sass/style.sass */
+#footer-widget-area h3.widgettitle, #footer-widget-area h3.widgettitle {
+  background: transparent;
+  letter-spacing: 0;
+  padding: 0;
+}
+/* line 189, sass/style.sass */
+#footer-widget-area h3.widgettitle a, #footer-widget-area h3.widgettitle a {
+  color: #333333;
+}
+/* line 192, sass/style.sass */
+#footer-widget-area img.avatar {
+  border: 2px solid white;
+}
+/* line 195, sass/style.sass */
+#footer-widget-area ul.item-list {
+  border-bottom: 1px solid #444444;
+}
+/* line 198, sass/style.sass */
+#footer-widget-area ul.item-list li {
+  border-bottom: 1px solid black;
+  border-top: 1px solid #444444;
+}
+
+/* line 208, sass/style.sass */
+#page #wp-admin-bar a {
+  color: white;
+}
+
+/* =CSS imports and overrides */
+/* line 4, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#yib11banner {
+  padding-top: 5px;
+}
+
+/* line 11, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+body {
+  background-image: url(images/background.png);
+  background-repeat: repeat-y;
+  background-color: white;
+}
+
+/* line 17, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#graphical-banner {
+  overflow: hidden;
+  *zoom: 1;
+  background: #990000 url(images/banner-grad.jpg) right top repeat-y;
+  background-image: -webkit-gradient(linear, 0% 50%, 100% 50%, color-stop(25%, #990000), color-stop(100%, #d05853));
+  background-image: -webkit-linear-gradient(left, #990000 25%, #d05853);
+  background-image: -moz-linear-gradient(left, #990000 25%, #d05853);
+  background-image: -o-linear-gradient(left, #990000 25%, #d05853);
+  background-image: -ms-linear-gradient(left, #990000 25%, #d05853);
+  background-image: linear-gradient(left, #990000 25%, #d05853);
+  clear: both;
+  min-height: 70px;
+  padding: 0;
+  position: relative;
+  width: 910px;
+}
+/* line 26, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#graphical-banner.tall {
+  height: 180px;
+}
+/* line 29, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#graphical-banner h1#site-title {
+  bottom: 20px;
+  color: white;
+  left: 30px;
+  font-size: 18pt;
+  font-weight: normal;
+  margin: 0;
+  position: absolute;
+}
+/* line 38, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#graphical-banner img {
+  float: right;
+}
+
+/* line 41, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#main_content {
+  overflow: hidden;
+  *zoom: 1;
+  float: left;
+  margin: 0;
+  border: 0;
+  width: 910px;
+  padding: 0;
+  clear: both;
+  min-height: 300px;
+  height: auto !important;
+  height: 300px;
+}
+/* line 51, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#main_content > .padder {
+  overflow: hidden;
+  *zoom: 1;
+  background: url("images/crest.png") left bottom no-repeat;
+}
+
+/* line 55, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#unit-banner {
+  float: left;
+  padding: 10px 0 0 0;
+  width: 910px;
+}
+
+/* line 60, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#home {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+/* line 64, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#group {
+  width: 730px;
+}
+
+/* line 68, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#centre-col {
+  border-left: 1px solid #dedede;
+  padding: 0 19px 10px;
+}
+/* line 72, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#centre-col h1, #centre-col h2, #centre-col h3, #centre-col #footer-widget-area h3.widgettitle, #footer-widget-area #centre-col h3.widgettitle, #centre-col h4, #centre-col h5, #centre-col h6 {
+  color: #333366;
+}
+
+/* line 79, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#left-nav {
+  margin: 0;
+  border: 0;
+  padding-right: 10px;
+  float: left;
+  font-size: 12px;
+  color: #252525;
+}
+/* line 87, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#left-nav a:hover {
+  color: #cc0000;
+  text-decoration: underline;
+}
+/* line 91, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#left-nav #navigation {
+  text-align: left;
+}
+/* line 94, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#left-nav #navigation a:link, #left-nav #navigation a:visited {
+  text-decoration: none;
+  color: black;
+}
+/* line 97, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#left-nav #navigation a:hover {
+  text-decoration: underline;
+  color: #cc0000;
+}
+/* line 103, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#left-nav #navigation ul#nav > li:first-child,
+#left-nav #navigation ul#sidebar-nav > li:first-child {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+/* line 106, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#left-nav #navigation ul#nav > li:first-child a,
+#left-nav #navigation ul#sidebar-nav > li:first-child a {
+  color: #cc0000;
+}
+/* line 109, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#left-nav ul#nav {
+  float: none;
+}
+/* line 112, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#left-nav ul#nav li {
+  display: block;
+  float: none;
+}
+/* line 115, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#left-nav ul#nav li.current_page_item > a {
+  text-decoration: underline;
+}
+/* line 118, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#left-nav ul#nav li a {
+  background: none;
+}
+/* line 121, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#left-nav ul#nav li ul {
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  -o-box-shadow: none;
+  box-shadow: none;
+  display: block;
+  position: static;
+  left: 0;
+}
+/* line 128, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#left-nav ul#nav .sfhover,
+#left-nav ul#nav *:hover {
+  position: static;
+}
+/* line 132, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#left-nav ul#nav .sfhover ul li,
+#left-nav ul#nav *:hover ul li {
+  min-height: 12px;
+}
+/* line 134, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#left-nav ul#nav .sfhover ul li a,
+#left-nav ul#nav *:hover ul li a {
+  padding: 0;
+}
+
+/* line 138, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+div#right-col h2, div#right-col h3, div#right-col #footer-widget-area h3.widgettitle, #footer-widget-area div#right-col h3.widgettitle, div#right-col h4 {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 18px;
+}
+
+/* line 145, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#right-col-list p {
+  line-height: 14px;
+}
+/* line 147, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#right-col-list ul {
+  list-style-type: none;
+  text-indent: -40px;
+  padding-bottom: 10px;
+}
+/* line 151, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#right-col-list .ToC {
+  list-style-type: none;
+  text-indent: -15px;
+}
+
+/* line 155, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#right-col-button, #right-col-highlight {
+  padding-top: 15px;
+}
+
+/* line 158, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#social-media-icons {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-bottom: 18px;
+}
+/* line 162, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#social-media-icons a:hover {
+  text-decoration: none;
+}
+/* line 164, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+#social-media-icons img {
+  padding-top: 0;
+}
+
+/* line 171, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+div#footer {
+  font-size: 10px;
+  margin: 0;
+  width: auto;
+}
+
+/* line 178, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+div#footer-area a {
+  color: #252525;
+  font-size: 10px;
+  text-decoration: none;
+}
+/* line 182, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_yu.sass */
+div#footer-area a:hover {
+  color: #cc0000;
+  text-decoration: underline;
+}
+
+/* line 4, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.sticky.post {
+  background: #1d1d1d;
+}
+/* line 6, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.sticky.post div.author-box {
+  background: black;
+}
+/* line 9, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.sticky.post p.date, .sticky.post p.postmetadata {
+  border-bottom: 1px solid #999999;
+  border-top: 1px solid #999999;
+}
+
+/* line 14, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+span.sticky-post {
+  background: #333333;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* line 21, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.sticky.post .date {
+  color: #999999;
+  background: transparent;
+}
+/* line 24, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.sticky.post div.author-box img {
+  border-color: #333333;
+}
+/* line 26, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.sticky.post .entry,
+.sticky.post h2.posttitle a {
+  color: #eeeeee;
+}
+
+/* line 30, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.group-create #content .padder {
+  background: url("images/bg-content-padder.png") repeat-x scroll left top transparent;
+}
+
+/* line 33, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#aw-whats-new-submit {
+  display: inline;
+}
+
+/* line 36, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#whats-new-options {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 39, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+body #container #new-topic-post {
+  margin-bottom: 18px;
+}
+
+/* line 43, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+body.register #sidebar {
+  display: none;
+}
+/* line 46, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+body.page-template-onecolumn-page-php #container #content .padder {
+  margin-right: 0;
+}
+/* line 48, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+body.page-template-onecolumn-page-php #blog-page {
+  width: 75%;
+  margin: 0 auto;
+}
+
+/* line 52, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#activity-stream {
+  margin-top: 0;
+}
+
+/* line 55, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.messages-notices a.button, .messages-notices #left-col a.button, #left-col .messages-notices a.button,
+.messages-notices #right-col a.button,
+#right-col .messages-notices a.button,
+.messages-notices #contre-col a.button,
+#contre-col .messages-notices a.button {
+  font-size: 85%;
+  padding: 3px 4px;
+}
+
+/* line 59, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.standard-form div.submit input#send, .bbp-form div.submit input#send, #theme-my-login div.submit input#send,
+#post-topic-reply,
+#profile-edit-form,
+#avatar-upload-form,
+#settings-form,
+body.messages #container #item-body,
+#item-body .profile {
+  margin-bottom: 18px;
+}
+
+/* line 69, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+body.friends #container #item-body, body.groups #container #item-body, body.forums #container #item-body {
+  margin-bottom: 18px;
+}
+/* line 73, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+body.profile .bp-widget h4 {
+  margin-top: 18px;
+}
+
+/* line 76, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#previous-next.submit {
+  margin-bottom: 18px;
+}
+
+/* line 79, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#wp-admin-bar-favorite-topics,
+#adminbarsearch-wrap {
+  display: none;
+}
+
+/* line 84, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+body.single a.comment-reply-link, body.page a.comment-reply-link {
+  font-size: 11px;
+  font-weight: normal;
+}
+/* line 88, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+body.search-results h2.pagetitle, body.search-no-results h2.pagetitle {
+  display: none;
+}
+
+/* line 92, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+body.activity #message.updated {
+  display: none;
+}
+
+/* line 98, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.dir-list {
+  margin-top: -18px;
+}
+/* line 104, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.dir-list p.topic-meta img.avatar {
+  padding: 0 !important;
+}
+
+/* line 107, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+form.dir-form {
+  position: relative;
+}
+
+/* line 117, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div.dir-search {
+  display: none;
+}
+
+/* line 131, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div.item-list-tabs, div.incsub_wiki_tabs {
+  background: transparent;
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 18px;
+  margin-top: 0;
+  overflow: visible;
+}
+/* line 138, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div.item-list-tabs ul, div.incsub_wiki_tabs ul {
+  margin-bottom: -1px !important;
+  overflow: hidden;
+  position: relative;
+}
+/* line 142, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div.item-list-tabs ul li, div.incsub_wiki_tabs ul li {
+  background: #eeeeee !important;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #eeeeee !important;
+  border-bottom: none;
+  display: block;
+  float: left;
+  font-size: 12px;
+  line-height: 28px !important;
+  text-transform: uppercase;
+}
+/* line 154, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div.item-list-tabs ul li:first-child, div.incsub_wiki_tabs ul li:first-child {
+  margin-left: 20px;
+}
+/* line 156, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div.item-list-tabs ul li.selected, div.incsub_wiki_tabs ul li.selected, div.item-list-tabs ul li.current, div.incsub_wiki_tabs ul li.current, div.item-list-tabs ul li:hover, div.incsub_wiki_tabs ul li:hover {
+  background: white !important;
+}
+/* line 160, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div.item-list-tabs ul li.selected a, div.incsub_wiki_tabs ul li.selected a, div.item-list-tabs ul li.current a, div.incsub_wiki_tabs ul li.current a {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+}
+/* line 164, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div.item-list-tabs ul li a, div.incsub_wiki_tabs ul li a {
+  color: #cc0000 !important;
+  font-weight: bold;
+  height: auto;
+  padding: 5px 10px;
+  display: block;
+}
+/* line 170, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div.item-list-tabs ul li.selected a, div.incsub_wiki_tabs ul li.selected a, div.item-list-tabs ul li.current a, div.incsub_wiki_tabs ul li.current a,
+div.item-list-tabs ul li a:hover,
+div.incsub_wiki_tabs ul li a:hover {
+  color: #333333;
+}
+/* line 174, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div.item-list-tabs ul li a span, div.incsub_wiki_tabs ul li a span {
+  background: #333366;
+  -moz-border-radius: 9px;
+  -webkit-border-radius: 9px;
+  -o-border-radius: 9px;
+  -ms-border-radius: 9px;
+  -khtml-border-radius: 9px;
+  border-radius: 9px;
+  color: white;
+  margin: -3px 0 0 5px;
+  padding: 2px 10px;
+}
+/* line 181, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div.item-list-tabs ul li > span, div.incsub_wiki_tabs ul li > span {
+  font-weight: bold;
+}
+
+/* line 184, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div#subnav.item-list-tabs, div#subnav.incsub_wiki_tabs {
+  max-width: 960px;
+  margin: -18px -19px 18px -19px;
+  min-height: 1em;
+  padding: 0 19px;
+}
+/* line 190, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.single-item div#subnav.item-list-tabs, .single-item div#subnav.incsub_wiki_tabs {
+  margin-bottom: 0;
+}
+/* line 194, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div#subnav.item-list-tabs ul li, div#subnav.incsub_wiki_tabs ul li {
+  background: white !important;
+  line-height: 1.6 !important;
+  text-transform: none;
+}
+/* line 198, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div#subnav.item-list-tabs ul li a, div#subnav.incsub_wiki_tabs ul li a {
+  height: 18px;
+  line-height: 1.5;
+}
+/* line 202, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div#subnav.item-list-tabs ul li.current a, div#subnav.incsub_wiki_tabs ul li.current a,
+div#subnav.item-list-tabs ul li.current a:visited,
+div#subnav.incsub_wiki_tabs ul li.current a:visited,
+div#subnav.item-list-tabs ul li.current a:active,
+div#subnav.incsub_wiki_tabs ul li.current a:active {
+  color: #252525 !important;
+}
+/* line 206, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div#subnav.item-list-tabs ul li.last, div#subnav.incsub_wiki_tabs ul li.last {
+  margin: 3px 0;
+}
+
+/* line 210, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+body #subnav ul li {
+  border: none;
+}
+/* line 213, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+body #subnav ul li a {
+  color: #999999;
+}
+
+/* line 217, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+ul.item-list {
+  margin: 0;
+}
+/* line 219, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+ul.item-list li {
+  overflow: hidden;
+  *zoom: 1;
+  list-style-image: none;
+  list-style-type: none;
+  margin-left: 0;
+}
+/* line 223, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+ul.item-list li h5 {
+  font-weight: inherit;
+  line-height: inherit;
+  margin-bottom: 0;
+  text-transform: inherit;
+}
+/* line 229, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+ul.item-list li div.meta {
+  margin-top: 0;
+}
+/* line 232, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+ul.item-list li div.item-desc,
+ul.item-list li div.item-title,
+ul.item-list li div.item-meta {
+  margin-left: 75px;
+  width: auto;
+}
+/* line 238, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+ul.item-list .item-avatar {
+  overflow: hidden;
+  *zoom: 1;
+  float: left;
+}
+
+/* line 242, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div.pagination {
+  margin-top: 0;
+}
+
+/* line 248, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#group-create-body > input {
+  margin-bottom: 18px;
+}
+/* line 251, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#group-create-body img.avatar {
+  float: none;
+}
+/* line 254, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#group-create-body #group-name {
+  margin-bottom: 18px;
+}
+
+/* line 257, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+table.forum {
+  margin-right: 0;
+}
+
+/* line 261, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#forum-topic-form input,
+#forum-topic-form textarea {
+  margin-bottom: 18px !important;
+}
+
+/* line 277, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.profile .bp-widget {
+  margin-bottom: 18px;
+}
+/* line 282, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.profile table.profile-fields .field_linkedin .label {
+  background-image: url("images/icons/16px/linkedin.png");
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+/* line 284, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.profile table.profile-fields .field_facebook .label {
+  background-image: url("images/icons/16px/facebook.png");
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+/* line 286, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.profile table.profile-fields .field_twitter .label {
+  background-image: url("images/icons/16px/twitter.png");
+  background-repeat: no-repeat;
+  background-position: 95% center;
+}
+/* line 289, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.profile .editfield {
+  border-bottom: 1px solid #eeeeee;
+  margin-top: 18px;
+}
+/* line 293, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.profile .editfield label,
+.profile .editfield .field-visibility-settings-toggle {
+  margin-bottom: 0;
+}
+/* line 296, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.profile .editfield p.description {
+  margin: 0 0 18px;
+}
+
+/* line 301, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div#item-header div#item-meta {
+  font-size: inherit;
+}
+
+/* line 305, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div#item-header span.activity,
+div#item-header h2 span.highlight {
+  margin-bottom: 0;
+}
+
+/* line 309, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+span.user-nicename,
+#item-header-content span.highlight {
+  background: #f4f4f4;
+  border-bottom: none;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+  border-right: none;
+  color: #666666;
+  display: inline-block;
+  font-size: 11px;
+  font-weight: normal;
+  line-height: 170%;
+  padding: 1px 8px;
+  text-decoration: none;
+  margin-right: 3px;
+}
+
+/* line 329, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#item-header-avatar {
+  float: left;
+}
+
+/* line 332, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#item-nav {
+  margin-bottom: 18px;
+}
+
+/* line 336, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+.item-avatar img.avatar {
+  margin-right: 1em;
+}
+
+/* line 340, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#page .author-box {
+  float: right;
+  margin: 0 0 15px 15px;
+}
+/* line 344, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#page .author-box p {
+  margin: 0;
+  line-height: 1.2;
+}
+/* line 348, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#page .post-content {
+  margin-left: 0;
+}
+
+/* line 351, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+span.activity,
+#message p {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+  border: none;
+  margin-top: 0;
+  text-decoration: none;
+}
+
+/* line 374, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+ul.button-nav li {
+  margin-bottom: 0;
+}
+
+/* line 388, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+span.activity p,
+div#message p,
+body.events .em-warning p {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+}
+/* line 390, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+span.activity.updated p,
+div#message.updated p,
+body.events .updated.em-warning p {
+  background-color: #bfff3f;
+  border-color: #5d8b00;
+  color: #2a3f00;
+}
+/* line 394, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+span.activity.error p,
+div#message.error p,
+body.events .error.em-warning p {
+  background-color: #ebb9b7;
+  border-color: #bc3934;
+  color: #802723;
+}
+
+/* line 403, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div#sidebar-me {
+  overflow: hidden;
+  *zoom: 1;
+  margin-bottom: 18px;
+}
+/* line 407, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div#sidebar-me h4 {
+  margin-bottom: 0;
+  line-height: 1.2;
+}
+/* line 411, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div#sidebar-me > a {
+  overflow: hidden;
+  *zoom: 1;
+}
+/* line 414, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div#sidebar-me p.forgetmenot {
+  margin-bottom: 0.5em;
+}
+/* line 417, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+div#sidebar-me img.avatar {
+  margin-right: 7px;
+  padding: 0;
+}
+
+/* line 421, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#search-bar {
+  margin-bottom: 18px;
+  margin-top: 5px;
+  background: transparent;
+  width: auto;
+}
+/* line 427, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#search-bar .padder {
+  padding: 0;
+  height: auto;
+}
+/* line 431, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#search-bar input[type=text] {
+  margin-right: 4px;
+  margin-bottom: 3px;
+  width: 95%;
+}
+
+/* line 445, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#commentform p.form-allowed-tags {
+  line-height: 1.5;
+  width: auto;
+}
+/* line 449, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_buddypress.sass */
+#commentform .form-submit {
+  margin-top: 18px;
+}
+
+/* line 4, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+.bbp-login-form {
+  margin-bottom: 18px;
+}
+/* line 8, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+.bbp-login-form .bbp-remember-me label {
+  display: inline-block;
+}
+
+/* line 15, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+div.bbp-template-notice {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+  padding: 0.3em;
+}
+
+/* line 24, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+#bbpress-forums table tr td,
+#bbpress-forums table tr th {
+  text-align: left;
+}
+/* line 29, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+#bbpress-forums fieldset.bbp-form legend {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+/* line 35, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+#bbpress-forums fieldset.bbp-form .quicktags-toolbar .ed_button {
+  color: inherit;
+}
+/* line 38, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+#bbpress-forums .bbp-forum-reply-count,
+#bbpress-forums .bbp-forum-topic-count {
+  width: 10%;
+}
+/* line 42, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+#bbpress-forums .bbp-reply-header {
+  font-size: 10px;
+}
+/* line 45, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+#bbpress-forums .bbp-forum-title,
+#bbpress-forums .bbp-topic-title {
+  font-weight: bold;
+}
+/* line 50, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+#bbpress-forums li.bbp-body div.bbp-reply-author {
+  line-height: 1.2;
+}
+/* line 53, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+#bbpress-forums td.bbp-reply-author {
+  line-height: 1;
+  text-align: center;
+}
+/* line 57, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+#bbpress-forums td.bbp-reply-author img.avatar {
+  float: none;
+}
+/* line 60, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+#bbpress-forums td.bbp-reply-author #bbp_topic_title,
+#bbpress-forums td.bbp-reply-author #bbp_topic_tags {
+  width: 97%;
+}
+/* line 66, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+#bbpress-forums #wp-bbp_topic_content-wrap {
+  margin-bottom: 18px;
+}
+/* line 69, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+#bbpress-forums textarea#bbp_topic_content {
+  width: 99.9%;
+  height: 8em;
+  margin: 0;
+}
+
+/* line 74, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+.bbp-topic-freshness,
+.bbp-forum-freshness {
+  text-align: left;
+}
+
+/* line 81, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_bbpress.sass */
+.bbp-form {
+  margin-bottom: 18px;
+}
+
+/* --- WordPress plugins -------------------------------------------------------
+ */
+/* line 12, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+div.incsub_wiki_tabs {
+  margin-right: 0;
+  margin-left: -19px;
+}
+/* line 17, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+div.incsub_wiki_tabs ul.left {
+  margin-left: 19px !important;
+}
+
+/* line 22, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+div.incsub_wiki_top a.incsub_wiki_crumbs {
+  font-size: inherit;
+}
+
+/* line 25, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+div.incsub_wiki_content {
+  margin: 0 0 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid #eeeeee;
+}
+
+/* line 30, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+#wiki_title {
+  margin-bottom: 18px !important;
+  width: 95%;
+}
+
+/* line 35, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+#qt_wiki_content_toolbar input[type="button"] {
+  color: #333333 !important;
+}
+
+/* line 41, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+#toc {
+  margin-bottom: 18px;
+  background: transparent;
+  border-width: 2px;
+  border-style: dotted;
+  border-color: #eeeeee;
+  padding: 0.3em 1em;
+  width: auto;
+}
+/* line 45, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+#toc ul {
+  margin: 0;
+  list-style-position: inside;
+}
+/* line 48, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+#toc ul li {
+  line-height: 1.2;
+  margin: 0.5em 0;
+}
+
+/* line 52, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+#toc_title {
+  text-align: left;
+  margin: 0.3em 0;
+}
+
+/* line 65, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+body.events div.em-events-search {
+  margin-bottom: 18px;
+}
+/* line 67, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+body.events div.em-events-search .em-events-search-text {
+  width: 90%;
+}
+/* line 69, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+body.events div.em-events-search .em-events-search-dates {
+  padding-right: 1em;
+}
+/* line 72, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+body.events .subsubsub {
+  margin-bottom: 18px;
+  border-bottom: 1px solid #eeeeee;
+}
+/* line 76, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+body.events a.em-button {
+  margin: -36px 0 0;
+}
+/* line 79, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+body.events .em-warning {
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  -o-border-radius: 0;
+  -ms-border-radius: 0;
+  -khtml-border-radius: 0;
+  border-radius: 0;
+  margin: 0 0 18px;
+  padding: 0;
+}
+/* line 84, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+body.events .em-warning p {
+  background-color: #ffeaa6;
+  border: 1px solid #d9a600;
+  margin: 0 !important;
+  padding: 10px;
+}
+/* line 90, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+body.events .em-events-list {
+  margin-bottom: 18px;
+}
+
+/* line 93, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+form.em-events-search-form {
+  margin-bottom: 18px;
+}
+/* line 96, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+form.em-events-search-form input.em-events-search-text {
+  width: 95%;
+  margin-bottom: 0.3em;
+}
+/* line 99, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+form.em-events-search-form .em-events-search-category,
+form.em-events-search-form .em-events-search-country,
+form.em-events-search-form .em-events-search-region,
+form.em-events-search-form .em-events-search-state {
+  display: none;
+}
+
+/* line 112, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+img#wpstats {
+  width: 0px;
+  height: 0px;
+  overflow: hidden;
+}
+
+/* line 121, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+.comment-subscription-form {
+  margin: 0.3em 0;
+}
+/* line 123, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+.comment-subscription-form label {
+  display: inline-block;
+  margin: 0;
+}
+
+/* line 138, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+#theme-my-login p.forgetmenot label {
+  display: inline;
+}
+
+/* line 144, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+#page .login p.error {
+  padding: 5px;
+  border: 1px solid #d05853;
+  background-color: #e6a6a3;
+}
+/* line 148, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+#page .login p.messagea {
+  padding: 5px;
+  border: 1px solid #ffd240;
+  background-color: #ffeaa6;
+}
+
+/* line 154, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+.page ul.tml-action-links {
+  list-style: none;
+  margin: 0.3em 0 0;
+}
+
+/* line 160, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+.tml-user-avatar {
+  overflow: hidden;
+  *zoom: 1;
+  display: inline;
+  float: left;
+}
+
+/* line 164, /Users/smartin/Sites/yushpp.yorku.ca/httpdocs/wp-content/themes/york-university-social/sass/_plugins.sass */
+.tml-user-links {
+  padding-left: 70px;
+  line-height: 1.5;
+}

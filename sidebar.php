@@ -1,0 +1,1 @@
+<!-- TODO: unregister default sidebar action -->

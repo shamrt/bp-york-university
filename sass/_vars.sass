@@ -1,0 +1,116 @@
+// --- [ Colors ] -----------------------
+
+$color_red: #C00
+$color_medium_red: #d05853
+$color_dark_red: #900
+$color_dark_grey: #252525
+$color_light_grey: #eee
+$color_grey_blue: #336
+$color_purple: #336
+$color_blue: #007A7A
+$color_green: #7FBE00
+$color_yellow: #FFEAA6
+
+$color_dark: #343434
+$color_dark_2: #585858
+$color_dark_3: #3d3d3d
+
+$color_body: #fff
+$color_bg: #C0C0C0
+$color_bg_grad: $color_bg - #111
+
+$color_primary: $color_red
+$color_primary_2: #992626
+$color_primary_3: #850000
+$color_primary_4: #E63939
+$color_primary_5: #E66767
+$color_primary_6: lighten($color_primary, 80%)
+
+$color_secondary: $color_blue
+$color_secondary_2: #175C5C
+$color_secondary_3: #005050
+$color_secondary_4: #2FBDBD
+$color_secondary_5: #55BDBD
+$color_secondary_6: lighten($color_secondary, 70%)
+
+$color_tertiary: $color_green
+$color_tertiary_2: #6B8F24
+$color_tertiary_3: #537C00
+$color_tertiary_4: #A7DF38
+$color_tertiary_5: #B6DF64
+$color_tertiary_6: lighten($color_tertiary, 50%)
+
+// Blueprint overrides
+
+$text-color: $color_dark_grey
+$blueprint-grid-width: 29px
+// $blueprint-grid-columns: 18
+
+// Fonts
+
+$font_size: 12px
+$font_size_small: $font_size - 2
+$font_family: Arial, Helvetica, sans-serif
+$font_family_input: "Lucida Grande", $font_family
+$font_color_footer: darken($color_bg, 10%)
+$line_height: 1.6
+
+// Miscellaneous
+
+$drop: $font_size * 1.5
+$pad: $drop
+$default-border-radius: 0
+$column-margin: 19px
+
+/*
+ * Mixins
+ * -----------------------------------------------------------------------------
+ 
+// =yu-container
+//   +container
+//   padding: 5px (960px - $blueprint-container-size) /2
+//   margin: 0
+//   +clearfix
+  
+=drop
+  margin-bottom: $drop
+  
+=module
+  +box-shadow(0 1px 4px rgba(0, 0, 0, 0.25), 0 0 40px rgba(0, 0, 0, 0.06) inset)
+  background: #fff
+  +clearfix
+  +drop
+  
+=gradient( $color_bg_grad, $color_bg, $break: 35%, $start: top )
+  background: $color_bg
+  background: -moz-linear-gradient($start, $color_bg_grad 0%, $color_bg_grad $break, $color_bg 100%)
+  background: -webkit-gradient(linear, left $start, left bottom, color-stop(0%, $color_bg_grad), color-stop($break, $color_bg_grad), color-stop(100%, $color_bg))
+  background: -webkit-linear-gradient($start, $color_bg_grad 0%, $color_bg_grad $break, $color_bg 100%)
+  background: -o-linear-gradient($start, $color_bg_grad 0%, $color_bg_grad $break, $color_bg 100%)
+  background: -ms-linear-gradient($start, $color_bg_grad 0%, $color_bg_grad $break, $color_bg 100%)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$color_bg_grad', endColorstr='$color_bg',GradientType=0 )
+  background: linear-gradient($start, $color_bg_grad 0%, $color_bg_grad $break, $color_bg 100%)
+
+=yu_aside_box
+  background: transparent
+  border:
+    width: 2px
+    style: dotted
+    color: $color_light_grey
+  padding: 0.3em 1em
+  
+=yu_input
+  $input_font_size: $font_size - 1
+
+  background: #fff
+  border: 1px solid #999
+  +border-radius(0)
+  +box-shadow(0 2px 0 rgba(0, 0, 0, 0.075) inset)
+  color: $font_color
+  font-family: $font_family_input
+  font-size: $input_font_size
+  line-height: $input_font_size
+  margin: 
+    bottom: 3px
+    left: 0
+  padding: 3px 1px

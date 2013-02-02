@@ -1,0 +1,166 @@
+/*
+ * --- WordPress plugins -------------------------------------------------------
+ */
+ 
+// WPMU Wiki
+// --------------------------------------------------------------
+
+.incsub_wiki
+  input[type="submit"]
+    @extend button.button
+
+div.incsub_wiki_tabs
+  @extend div.item-list-tabs
+  margin-right: 0
+  margin-left: (-$column-margin)
+  
+  ul.left
+    margin-left: 19px !important
+
+div.incsub_wiki_top
+  
+  a.incsub_wiki_crumbs
+    font-size: inherit
+    
+div.incsub_wiki_content
+  margin: 0 0 $drop
+  padding-bottom: $drop
+  border-bottom: 1px solid $color_light_grey
+    
+#wiki_title
+  margin-bottom: $drop !important
+  width: 95%
+  
+#qt_wiki_content_toolbar
+  input[type="button"]
+    color: $font_color !important
+
+// SEO Table of contents
+// --------------------------------------------------------------
+
+#toc
+  +drop
+  +yu_aside_box
+  width: auto
+  ul
+    margin: 0
+    list-style-position: inside
+    li
+      line-height: 1.2
+      margin: 0.5em 0
+    
+#toc_title
+  text-align: left
+  margin: 0.3em 0
+
+// FB Linkedin Resume
+// --------------------------------------------------------------
+
+// nothin' yet
+
+// Events Manager
+// --------------------------------------------------------------
+
+body.events
+  div.em-events-search
+    margin-bottom: $drop
+    .em-events-search-text
+      width: 90%
+    .em-events-search-dates
+      padding-right: 1em
+    
+  .subsubsub
+    +drop
+    border-bottom: 1px solid $color_light_grey
+  
+  a.em-button
+    margin: -($drop*2) 0 0
+    
+  .em-warning
+    @extend div#message
+    +border-radius(0)
+    margin: 0 0 $drop
+    padding: 0
+    p
+      background-color: $color_yellow
+      border: 1px solid darken($color_yellow, 40%)
+      margin: 0 !important
+      padding: 10px
+      
+  .em-events-list
+    +drop
+    
+form.em-events-search-form
+  +drop
+  
+  input.em-events-search-text
+    width: 95%
+    margin-bottom: 0.3em
+  .em-events-search-category,
+  .em-events-search-country,
+  .em-events-search-region,
+  .em-events-search-state
+    display: none
+    
+  input[type="submit"]
+    @extend button.button
+    
+    
+// =WordPress Stats (hide WordPress Stats smiley)
+// --------------------------------------------------------------
+
+img#wpstats
+  width: 0px
+  height: 0px
+  overflow: hidden
+    
+    
+// =Jetpack
+// --------------------------------------------------------------
+
+.comment-subscription-form
+  margin: 0.3em 0
+  label
+    display: inline-block
+    margin: 0
+
+.contact-submit
+  input[type="submit"]
+    @extend button.button
+
+    
+// =Theme My Login
+// --------------------------------------------------------------
+
+#theme-my-login
+  @extend .standard-form
+  
+  p.forgetmenot label
+    display: inline
+      
+#page
+  .login
+    p
+      &.error
+        padding: 5px
+        border: 1px solid $color_medium_red
+        background-color: lighten($color_medium_red, 20%)
+      &.messagea
+        padding: 5px
+        border: 1px solid darken($color_yellow, 20%)
+        background-color: $color_yellow
+
+ul.tml-action-links
+  .page &
+    +reset-list-style
+    margin: 0.3em 0 0
+  li a
+    @extend button.button
+    
+.tml-user-avatar
+  +clearfix
+  +float-left
+  
+.tml-user-links
+  padding-left: 70px
+  line-height: 1.5

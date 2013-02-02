@@ -1,0 +1,130 @@
+// =Horizontal Rule
+//--------------------------------------------------------------
+
+hr
+  background: #ddd
+  border: none
+  clear: both
+  color: #ddd
+  float: none
+  height: .1em
+  margin: 0 0 1.45em
+  width: 100%
+  &.space
+    background: #fff
+    color: #fff
+
+
+// =Base
+//--------------------------------------------------------------
+
+html
+  height: 100%
+
+body
+  color: $font-color
+  font-size: $font_size
+  line-height: $line_height
+  max-width: none
+  width: auto
+
+body#bp-default #wp-admin-bar .padder
+  width: 100% !important
+  max-width: 10000px !important
+  min-width: 960px
+  clear: both
+
+.padder
+  padding: 0
+  
+div.page
+  overflow: visible
+
+body, h1, h2, h3, h4, h5, h6, div.author-box
+  font-family: $font_family
+
+a
+  color: $color_red
+  &:hover
+    color: $color_red
+  &:focus
+    outline: none
+  
+p
+  margin-bottom: $drop
+  
+  &.postmetadata,
+  &.date
+    font-family: inherit
+    
+    span:first-child
+      font-family: inherit
+      
+  &.postmetadata
+    clear: both
+
+
+// =Headers
+// -----------------------------------------------------------------------------
+
+h1, h2, h3, h4, h5, h6
+  font-weight: bold
+  line-height: 1em
+  margin: 0 0 $drop
+  text-transform: uppercase
+
+h1#site-title
+  font-size: 18pt
+  font-weight: normal
+  text-transform: none
+
+  
+// =Forms
+// -----------------------------------------------------------------------------
+
+#page
+  textarea,
+  input[type="text"],
+  select,
+  input[type="password"]
+    +yu_input
+    max-width: 48em
+      
+.form-submit #submit,
+#wp-submit
+  @extend button.button
+    
+.standard-form 
+  p
+    margin-bottom: $drop/2
+
+  label,
+  span.label
+    display: block
+    font-weight: bold
+    margin: 0
+    
+  input
+    &[type="submit"],
+    &[type="reset"],
+    &[type="button"]
+      @extend button.button
+      
+  input[type="submit"]
+    @extend .button.submit
+      
+  textarea,
+  input[type="text"],
+  input[type="password"]
+    min-width: 75%
+    
+  div.checkbox,
+  div.radio
+    +drop
+    
+    ul
+      margin-top: 0.5em
+    
+    label
+      color: inherit
+      font-size: inherit

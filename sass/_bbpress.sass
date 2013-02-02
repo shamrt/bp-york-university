@@ -1,0 +1,88 @@
+// =Login
+// -----------------------------------------------------------------------------
+
+.bbp-login-form
+  +drop
+  
+  .bbp-remember-me
+    label
+      display: inline-block
+      
+
+// =Notices
+// -----------------------------------------------------------------------------
+
+div.bbp-template-notice
+  // background-color: $color_tertiary_6
+  +border-radius
+  padding: 0.3em
+      
+// =Forums
+// -----------------------------------------------------------------------------
+
+#bbpress-forums
+  table tr td,
+  table tr th
+    text-align: left      
+      
+  fieldset.bbp-form 
+    legend
+      font:
+        size: 1.1em
+        weight: bold
+    
+    .quicktags-toolbar
+      .ed_button
+        color: inherit
+
+  .bbp-forum-reply-count,
+  .bbp-forum-topic-count
+    width: 10%
+
+  .bbp-reply-header
+    font-size: $font_size_small
+    
+  .bbp-forum-title,
+  .bbp-topic-title
+    font-weight: bold
+    
+  li.bbp-body
+    div.bbp-reply-author
+      line-height: 1.2
+    
+  td.bbp-reply-author
+    line-height: 1
+    text-align: center
+  
+    img.avatar
+      float: none
+            
+    #bbp_topic_title,
+    #bbp_topic_tags
+      width: 97%
+
+  // =TinyMCE
+ 
+  #wp-bbp_topic_content-wrap
+    margin-bottom: $drop
+  
+  textarea#bbp_topic_content
+    width: 99.9%
+    height: 8em
+    margin: 0
+
+.bbp-topic-freshness,
+.bbp-forum-freshness
+  text-align: left
+    
+// =Forms
+// -----------------------------------------------------------------------------  
+  
+.bbp-form
+  @extend .standard-form
+  +drop
+  
+  // .bbp-submit-wrapper
+  //   float: left
+  //   margin-top: 0
+  //   text-align: left

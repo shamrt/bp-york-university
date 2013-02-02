@@ -1,0 +1,184 @@
+// =York University cross-site header banner
+// -----------------------------------------------------
+ 
+#yib11banner
+  padding-top: 5px
+
+
+// =Main Content
+// -----------------------------------------------------
+ 
+body
+  background:
+    image: url(images/background.png)
+    repeat: repeat-y
+    color: white
+
+#graphical-banner
+  +clearfix
+  background: $color_dark_red url(images/banner-grad.jpg) right top repeat-y
+  +background-image(linear-gradient(left, $color_dark_red 25%, $color_medium_red))
+  clear: both
+  min-height: 70px
+  padding: 0
+  position: relative
+  width: 910px
+  &.tall
+    height: 180px
+  
+  h1#site-title
+    bottom: 20px
+    color: white
+    left: 30px
+    font-size: 18pt
+    font-weight: normal
+    margin: 0
+    position: absolute
+    
+  img
+    float: right
+
+#main_content
+  +clearfix
+  float: left
+  margin: 0
+  border: 0
+  width: 910px
+  padding: 0
+  clear: both
+  +min-height(300px)
+  
+  > .padder
+    +clearfix
+    background: url("images/crest.png") left bottom no-repeat
+
+#unit-banner
+  float: left
+  padding: 10px 0 0 0
+  width: 910px
+
+#home
+  text-transform: uppercase
+  font-size: 14px
+
+#group
+  width: 730px
+  // color: $color_dark_grey
+
+#centre-col
+  border-left: 1px solid #DEDEDE
+  padding: 0 $column-margin 10px
+  
+  h1, h2, h3, h4, h5, h6
+    color: $color_purple
+    
+    
+// =Sidebars
+// -----------------------------------------------------------
+
+#left-nav
+  margin: 0
+  border: 0
+  padding-right: 10px
+  float: left
+  font-size: $font_size
+  color: $color_dark_grey
+  
+  a:hover
+    color: $color_red
+    text-decoration: underline
+        
+  #navigation
+    text-align: left
+    
+    a:link, a:visited
+      text-decoration: none
+      color: #000
+    a:hover
+      text-decoration: underline
+      color: $color_red
+        
+    ul#nav,
+    ul#sidebar-nav
+      > li:first-child
+        font-size: $font_size + 2
+        text-transform: uppercase
+        a
+          color: $color_red
+        
+  ul#nav
+    float: none
+    
+    li
+      display: block
+      float: none
+      &.current_page_item > a
+        text-decoration: underline
+        
+      a
+        background: none
+        
+      ul
+        +box-shadow(none)
+        display: block
+        position: static
+        left: 0
+    
+    // Override default menu styling
+    .sfhover,
+    *:hover
+      position: static
+    
+      ul li
+        min-height: $font_size
+        a
+          padding: 0
+                
+div#right-col
+  h2, h3, h4
+    text-transform: uppercase
+    font-size: $font_size
+    font-weight: bold
+    line-height: 18px
+
+#right-col-list
+  p
+    line-height: 14px
+  ul
+    list-style-type: none
+    text-indent: -40px
+    padding-bottom: 10px
+  .ToC
+    list-style-type: none
+    text-indent: -15px
+
+#right-col-button, #right-col-highlight
+  padding-top: 15px
+  
+#social-media-icons
+  +reset-box-model
+  +drop
+  
+  a:hover
+    text-decoration: none
+  img
+    padding-top: 0
+
+
+// =Footer
+// -----------------------------------------------------------
+
+div#footer
+  font-size: 10px
+  margin: 0
+  width: auto
+  
+div#footer-area
+  
+  a
+    color: $color_dark_grey
+    font-size: 10px
+    text-decoration: none
+    &:hover
+      color: $color_red
+      text-decoration: underline
